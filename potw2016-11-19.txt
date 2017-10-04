@@ -1,0 +1,6 @@
+Yes, you can gain admin access without entering the correct password.
+This is due to the fact that the "secret" string is stored in memory following the "name" string,
+and since you can enter a string of any length as a name, despite "name" being limited to 20
+characters, you can enter 20 characters as name, and then continues to enter characters to overwrite
+the "secret" string to be any string. This allows you to change the password and thus gain access
+without entering the correct password. 
